@@ -63,7 +63,7 @@ public class SecondController implements Initializable
 	
 	public void split(String text)
 	{
-		pieces=text.split("£");
+		pieces=text.split("Â£");
 		if(pieces[0].equals("l1st"))
 		{
 			userNo=Integer.valueOf(pieces[1].trim());
@@ -102,7 +102,7 @@ public class SecondController implements Initializable
 				dout = new DataOutputStream(socket.getOutputStream());
 				
 				String msgin="";
-				dout.writeUTF("-usr£"+sc.userName);
+				dout.writeUTF("-usrÂ£"+sc.userName);
 				dout.flush();
 				
 				while(!msgin.equals("exit"))
@@ -148,7 +148,7 @@ public class SecondController implements Initializable
 	}
 	public void sendMessages(String str) throws IOException
 	{	
-		dout.writeUTF("msg£"+lblUser.getText()+"£"+who+"£"+str);
+		dout.writeUTF("msgÂ£"+lblUser.getText()+"Â£"+who+"Â£"+str);
 		dout.flush();
 	}
 	public void saveMsg()
@@ -173,6 +173,7 @@ public class SecondController implements Initializable
 			e.printStackTrace();
 		}
 	}
+	@FXML
 	void btnSend_click(ActionEvent event) throws IOException
 	 {
 		// Clicking the send button
