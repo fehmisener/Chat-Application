@@ -1,6 +1,6 @@
 # Chat Application
  This program is an online chat application that can run on mobile and desktop. It is designed using Socket Programming. 
- The program consists of two parts, server and client. By establishing a connection with the client server, it is used to transfer the messages of the user to the server and at the same time to receive these messages from the server. Although unnecessary, Swing is used in the server part and JavaFx is used in the client part.
+ The program consists of two parts, server and client. By establishing a connection with the client server, it is used to transfer the messages of the user to the server and at the same time to receive these messages from the server. Although unnecessary, Swing is used in the server part and JavaFx is used in the client part. Sign in is required to log in. Messages are stored on the client's device.
 # How to Use
 In order to connect to the client server and communicate with other clients, the server program must be run at first on YOUR SERVER ( like Google Cloud, Azure, Amazon AWS).
 Before the server program runs, you need to arrange the port that the client will connect. You can find it on the serverMain class in the ChatApp_Server folder. (at line 54)
